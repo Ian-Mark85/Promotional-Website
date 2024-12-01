@@ -18,6 +18,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addEventListener("scroll", handleScroll);
-    // Initial check in case it's already in view
     handleScroll();
+});
+
+function navigateToPage(pageId){
+    hideSidebar();
+    switchPage(pageId);
+    history.pushState({page: pageId}, "", `#$(pageId)`);
+}
+
+
+function switchPage(pageId) {
+    
+    const pages = document.querySelectorAll(".page");
+    pages.forEach(page => page.classList.remove("visible"));
+
+    
+    const page = document.getElementById(pageId);
+    if (page) {
+        page.classList.add("visible");
+    }
+}
+
+
+window.addEventListener("popstate", (event) => {
+    const pageId = event.state ? event.state.page : "home";
+    switchPage(pageId);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const pageId = window.location.hash.replace("#", "") || "home";
+    switchPage(pageId);
 });

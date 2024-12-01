@@ -23,7 +23,7 @@ body{
 nav{
     background-color: #467A97;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Keeps navbar fixed at the top */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -66,27 +66,27 @@ nav a{
     align-items: center;
     color: #ffffff;
     font-family: "Alegreya Sans SC";
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease; 
 }
 
 nav a:hover {
-    color: #FF7043; /* Change text color on hover */
+    color: #FF7043; 
 }
 
-/* Underline Effect */
+
 nav a::after {
     content: "";
     position: absolute;
-    bottom: 8px; /* Place underline at the bottom */
+    bottom: 8px; 
     left: 0;
     width: 0;
-    height: 2px; /* Thickness of the underline */
-    background-color: #FF7043; /* Underline color */
-    transition: width 0.3s ease; /* Smooth underline animation */
+    height: 2px; 
+    background-color: #FF7043; 
+    transition: width 0.3s ease; 
 }
 
 nav a:hover::after {
-    width: 100%; /* Expands underline to full width on hover */
+    width: 100%; 
 }
 nav li:first-child{
     margin-right: auto;
@@ -133,14 +133,14 @@ nav li:first-child{
         width: 100%;
     }
 }
-/* For the container */
+
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Prevents overflow */
+    overflow: hidden; 
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), /* Darker overlay */
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), 
         url("../Images/Hero-image.png");
     background-size: cover;
     background-position: center;
@@ -148,7 +148,6 @@ nav li:first-child{
     max-width: 100vw;
 }
 
-/* Main container styles */
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +157,7 @@ nav li:first-child{
     max-width: 1200px;
 }
 
-/* Content section styling */
+
 .main__content {
     flex: 1;
     padding: 20px;
@@ -171,11 +170,10 @@ nav li:first-child{
     
 }
 
-/* Image container styling */
-/* Image container styling */
+
 .main__img--container {
     flex: 1;
-    max-width: 50%; /* Limit the image container to 50% of the width */
+    max-width: 50%; 
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -183,12 +181,12 @@ nav li:first-child{
     margin-top: 186px;
 }
 
-/* Ensuring the image fits well */
 #main__img {
     width: 100%;
     height: auto;
-    max-height: 80vh; /* Fit within the viewport height */
+    max-height: 93vh; 
     object-fit: cover;
+    margin-top: 74px;
 }
 .main__content h1{
     color: #ffffff;
@@ -209,14 +207,14 @@ nav li:first-child{
     border-radius: 2px;
     margin-top: 20px;
     cursor: pointer;
-    animation: pulse 1.5s ease-in-out infinite; /* Infinite pulsing */     
+    animation: pulse 1.5s ease-in-out infinite;     
     text-align: center; 
 }
 .main__btn a{
     color: white;
     text-decoration: none;
 }
-/* Responsive styling for screens smaller than 768px */
+
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -226,19 +224,19 @@ nav li:first-child{
     }
 }
 
-/* Responsive styling for screens smaller than 768px */
+
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        flex-direction: column; 
     }
     
     .main__img--container {
-        max-width: 100%; /* Full-width on smaller screens */
+        max-width: 100%; 
         margin-top: 20px;
     }
 
     .main__content, .main__img--container {
-        text-align: center; /* Center align text */
+        text-align: center; 
         align-items: center;
     }
 
@@ -258,12 +256,12 @@ nav li:first-child{
 @media (max-width: 500px) {
     .main__content {
         padding: 10px;
-        align-items: center; /* Center-align on smaller screens */
+        align-items: center; 
         text-align: center;
     }
 
     .main__content h1 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; 
     }
 
     .main__content p {
@@ -276,26 +274,15 @@ nav li:first-child{
         padding: 10px 15px;
     }
 }
-/*
-@keyframes slideInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-*/
+
 .features-section {
     padding: 60px 20px;
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../Images/Hero-image.png"); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #ffffff; /* Sets text color for contrast */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #ffffff; 
     min-height: 100vh;
 }
 .features-section h2 {
@@ -309,8 +296,8 @@ nav li:first-child{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    width: 100%; /* Ensure the container takes up the full width of the section */
-    box-sizing: border-box; /* Prevents padding from affecting the width */
+    width: 100%; 
+    box-sizing: border-box; 
    
 }
 @keyframes appear {
@@ -324,7 +311,7 @@ nav li:first-child{
     }
 }
 .feature-box {
-    /*background-color: rgba(70, 122, 151, 0.8); /* Semi-transparent background for readability */
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
@@ -333,7 +320,7 @@ nav li:first-child{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0%;
-    flex-grow: 1; /* Allow feature boxes to grow based on available space */
+    flex-grow: 1; 
 }
 
 .feature-box h3 {
@@ -353,13 +340,13 @@ nav li:first-child{
     transform: translateY(-5px);
 }
 
-/* Header Section Styling */
+
 .header-section {
     padding: 40px 20px;
     text-align: left;
     max-width: 1200px;
     margin: auto;
-    z-index: 10; /* Make sure header is above any other content */
+    z-index: 10; 
 }
 
 .header-section h1 {
@@ -369,7 +356,7 @@ nav li:first-child{
     font-family: "Instrument Sans";
 }
 
-/* Section Styling-left */
+
 .content-section {
     display: flex;
     align-items: center;
@@ -380,7 +367,7 @@ nav li:first-child{
     gap: 20px;
 }
 
-/* Text Content Styling */
+
 .text-content {
     flex: 1;
     padding: 20px;
@@ -400,7 +387,7 @@ nav li:first-child{
     font-family: "Instrument Sans";
 }
 
-/* Image Content Styling */
+
 .image-content {
     flex: 1;
     display: flex;
@@ -408,19 +395,19 @@ nav li:first-child{
 }
 
 .image-content img {
-    width: 70%;    /* Adjusted width to 70% of the container */
-    max-width: 700px; /* Reduced max width to 700px */
-    height: 500px;   /* Reduced height */
-    object-fit: cover; /* Ensure the image covers the container area without distortion */
+    width: 70%;    
+    max-width: 700px; 
+    height: 500px;   
+    object-fit: cover; 
     border-radius: 8px;
 }
 
-/* Reverse Layout for Alternate Sections */
+
 .reverse {
     flex-direction: row-reverse;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column;
@@ -428,7 +415,7 @@ nav li:first-child{
     }
     
     .reverse {
-        flex-direction: column; /* No reversal needed on smaller screens */
+        flex-direction: column; 
     }
 
     .text-content h2 {
@@ -440,11 +427,11 @@ nav li:first-child{
     }
 
     .image-content img {
-        width: 90%;  /* Make the image take 90% width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;  
+        height: auto; 
     }
 }
-/* Section Styling-2 Right */
+
 .content-section-2 {
     display: flex;
     align-items: center;
@@ -453,10 +440,10 @@ nav li:first-child{
     max-width: 1200px;
     margin: auto;
     gap: 20px;
-    flex-direction: row; /* Image on the left, text on the right */
+    flex-direction: row; 
 }
 
-/* Text Content Styling */
+
 .text-content-2 {
     flex: 1;
     padding: 20px;
@@ -476,7 +463,7 @@ nav li:first-child{
     font-family: "Instrument Sans";
 }
 
-/* Image Content Styling */
+
 .image-content-2 {
     flex: 1;
     display: flex;
@@ -484,23 +471,23 @@ nav li:first-child{
 }
 
 .image-content-2 img {
-    width: 70%;    /* Adjusted width to 70% of the container */
-    max-width: 700px; /* Reduced max width to 700px */
-    height: 500px;   /* Reduced height */
-    object-fit: cover; /* Ensure the image covers the container area without distortion */
+    width: 70%;    
+    max-width: 700px; 
+    height: 500px;   
+    object-fit: cover; 
     border-radius: 8px;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .content-section-2 {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Adjusting text and image position: Text goes above Image */
+    
     .text-content-2 {
-        order: -1; /* Move text above image */
+        order: -1; 
     }
 
     .text-content-2 h2 {
@@ -512,12 +499,12 @@ nav li:first-child{
     }
 
     .image-content-2 img {
-        width: 90%;  /* Make the image take 90% width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;  
+        height: auto;
     }
 }
 
-/* Section Styling-3 left  */
+
 .content-section-3 {
     display: flex;
     align-items: center;
@@ -528,7 +515,7 @@ nav li:first-child{
     gap: 20px;
 }
 
-/* Text Content Styling */
+
 .text-content-3 {
     flex: 1;
     padding: 20px;
@@ -548,7 +535,7 @@ nav li:first-child{
     font-family: "Instrument Sans";
 }
 
-/* Image Content Styling */
+
 .image-content-3 {
     flex: 1;
     display: flex;
@@ -556,19 +543,19 @@ nav li:first-child{
 }
 
 .image-content-3 img {
-    width: 70%;    /* Adjusted width to 70% of the container */
-    max-width: 700px; /* Reduced max width to 700px */
-    height: 500px;   /* Reduced height */
-    object-fit: cover; /* Ensure the image covers the container area without distortion */
+    width: 70%;    
+    max-width: 700px; 
+    height: 500px;   
+    object-fit: cover; 
     border-radius: 8px;
 }
 
-/* Reverse Layout for Alternate Sections */
+
 .reverse {
     flex-direction: row-reverse;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .content-section-3 {
         flex-direction: column;
@@ -576,7 +563,7 @@ nav li:first-child{
     }
     
     .reverse {
-        flex-direction: column; /* No reversal needed on smaller screens */
+        flex-direction: column; 
     }
 
     .text-content-3 h2 {
@@ -588,12 +575,12 @@ nav li:first-child{
     }
 
     .image-content-3 img {
-        width: 90%;  /* Make the image take 90% width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;  
+        height: auto; 
     }
 }
 
-/* Section Styling-4 Right */
+
 .content-section-4 {
     display: flex;
     align-items: center;
@@ -602,10 +589,10 @@ nav li:first-child{
     max-width: 1200px;
     margin: auto;
     gap: 20px;
-    flex-direction: row; /* Image on the left, text on the right */
+    flex-direction: row; 
 }
 
-/* Text Content Styling */
+
 .text-content-4 {
     flex: 1;
     padding: 20px;
@@ -625,7 +612,7 @@ nav li:first-child{
     font-family: "Instrument Sans";
 }
 
-/* Image Content Styling */
+
 .image-content-4 {
     flex: 1;
     display: flex;
@@ -633,23 +620,23 @@ nav li:first-child{
 }
 
 .image-content-4 img {
-    width: 70%;    /* Adjusted width to 70% of the container */
-    max-width: 700px; /* Reduced max width to 700px */
-    height: 500px;   /* Reduced height */
-    object-fit: cover; /* Ensure the image covers the container area without distortion */
+    width: 70%;    
+    max-width: 700px; 
+    height: 500px;   
+    object-fit: cover; 
     border-radius: 8px;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .content-section-2 {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Adjusting text and image position: Text goes above Image */
+    
     .text-content-4 {
-        order: -1; /* Move text above image */
+        order: -1; 
     }
 
     .text-content-4 h2 {
@@ -661,12 +648,12 @@ nav li:first-child{
     }
 
     .image-content-4 img {
-        width: 90%;  /* Make the image take 90% width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;  
+        height: auto; 
     }
 }
 
-/* Section Styling-5 left  */
+
 .content-section-5 {
     display: flex;
     align-items: center;
@@ -677,7 +664,7 @@ nav li:first-child{
     gap: 20px;
 }
 
-/* Text Content Styling */
+
 .text-content-5 {
     flex: 1;
     padding: 20px;
@@ -697,7 +684,7 @@ nav li:first-child{
     font-family: "Instrument Sans";
 }
 
-/* Image Content Styling */
+
 .image-content-5 {
     flex: 1;
     display: flex;
@@ -705,19 +692,19 @@ nav li:first-child{
 }
 
 .image-content-5 img {
-    width: 70%;    /* Adjusted width to 70% of the container */
-    max-width: 700px; /* Reduced max width to 700px */
-    height: 500px;   /* Reduced height */
-    object-fit: cover; /* Ensure the image covers the container area without distortion */
+    width: 70%;    
+    max-width: 700px; 
+    height: 500px;   
+    object-fit: cover; 
     border-radius: 8px;
 }
 
-/* Reverse Layout for Alternate Sections */
+
 .reverse {
     flex-direction: row-reverse;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .content-section-5 {
         flex-direction: column;
@@ -725,7 +712,7 @@ nav li:first-child{
     }
     
     .reverse {
-        flex-direction: column; /* No reversal needed on smaller screens */
+        flex-direction: column; 
     }
 
     .text-content-5 h2 {
@@ -737,27 +724,27 @@ nav li:first-child{
     }
 
     .image-content-5 img {
-        width: 90%;  /* Make the image take 90% width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;  
+        height: auto; 
     }
 }
 
-/* Section Styling */
+
 .content-section-About {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../Images/Hero-image.png'); /* Background image */
-    background-size: cover; /* Ensure the image covers the whole section */
-    background-position: center; /* Center the background image */
-    padding: 0 20px; /* Padding on the sides */
-    color: #ffffff; /* Text color */
+    background-size: cover; 
+    background-position: center; 
+    padding: 0 20px; 
+    color: #ffffff; 
 }
 
-/* Text Content Styling */
+
 .text-content-About {
-    max-width: 500px; /* Limit the width of the text */
+    max-width: 500px; 
     padding: 20px;
 }
 
@@ -773,20 +760,20 @@ nav li:first-child{
     font-family: 'Instrument Sans', sans-serif;
 }
 
-/* About 2nd page */
+
 .content-section-About_2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
-    padding: 0 20px; /* Padding on the sides */
-    text-align: center; /* Center text inside the section */
-    background-color: #f4f4f4; /* Optional background color */
+    height: 100vh; 
+    padding: 0 20px; 
+    text-align: center; 
+    background-color: #f4f4f4; 
 }
 
-/* Text Content Styling */
+
 .text-content-About_2 {
-    max-width: 600px; /* Limit the width of the text */
+    max-width: 600px; 
     padding: 20px;
 }
 
@@ -803,20 +790,20 @@ nav li:first-child{
     text-align: left;
 }
 
-/* About 3rd page */
+
 .content-section-About_3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
-    padding: 0 20px; /* Padding on the sides */
-    text-align: center; /* Center text inside the section */
-    background-color: #467A97; /* Optional background color */
+    height: 100vh;
+    padding: 0 20px; 
+    text-align: center; 
+    background-color: #467A97; 
 }
 
-/* Text Content Styling */
+
 .text-content-About_3 {
-    max-width: 600px; /* Limit the width of the text */
+    max-width: 600px; 
     padding: 20px;
 }
 
@@ -835,20 +822,20 @@ nav li:first-child{
     color: white;
 }
 
-/* Section Styling */
+
 .content-section-About_4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
-    padding: 0 20px; /* Padding on the sides */
-    text-align: center; /* Center text inside the section */
-    background-color: #f4f4f4; /* Optional background color */
+    height: 100vh; 
+    padding: 0 20px; 
+    text-align: center; 
+    background-color: #f4f4f4; 
 }
 
-/* Text Content Styling */
+
 .text-content-About_4 {
-    max-width: 600px; /* Limit the width of the text */
+    max-width: 600px; 
     padding: 20px;
 }
 
@@ -858,18 +845,18 @@ nav li:first-child{
     font-family: 'Instrument Sans', sans-serif;
 }
 
-/* Bullet List Styling */
+
 .bullet-list-About_4 {
-    list-style-type: disc; /* Use bullet points */
-    padding-left: 40px; /* Indentation for bullet points */
-    text-align: left; /* Align list items to the left */
+    list-style-type: disc;
+    padding-left: 40px; 
+    text-align: left; 
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Instrument Sans', sans-serif;
 }
 
 .bullet-list-About_4 li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px; 
 }
 
 .bullet-Point{
@@ -931,7 +918,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-end; /* Aligns the button to the right */
+    align-items: flex-end; 
 }
 
 form input,
@@ -953,25 +940,25 @@ form textarea {
 .button-2 {
     background-color: #FF7043;
     color: #FFFFFF;
-    padding: 8px 16px; /* Smaller padding for a smaller button */
-    font-size: 0.9em; /* Slightly smaller font size */
+    padding: 8px 16px; 
+    font-size: 0.9em; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    align-self: flex-end; /* Ensures the button stays aligned to the right */
+    align-self: flex-end; 
 }
 
 .button-2:hover {
     background-color: #FF5722;
 }
 
-/* Responsive Styles-1 */
+
 @media (max-width: 992px) {
     form {
-        align-items: flex-start; /* Button aligns to the left on smaller screens */
+        align-items: flex-start; 
     }
 }
-/* Responsive Styles-2 */
+
 @media (max-width: 992px) {
     .contact-container {
         flex-direction: column;
@@ -1040,7 +1027,7 @@ form textarea {
     }
 }
 
-/* Social Media Icons */
+
 .social-media {
     margin-top: 20px;
 }
@@ -1054,10 +1041,10 @@ form textarea {
 }
 
 .social-media a:hover {
-    color: #FF7043; /* Hover color for social media icons */
+    color: #FF7043; 
 }
 
-/* Responsive Styles */
+
 @media (max-width: 992px) {
     .social-media {
         text-align: center;
@@ -1070,19 +1057,4 @@ form textarea {
         font-size: 1.2em;
     }
 }
-/* Responsive Adjustments 
-@media (max-width: 768px) {
-    .content-section-2 {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .text-content-2 h2 {
-        font-size: 24px;
-    }
-
-    .text-content-2 p {
-        font-size: 16px;
-    }
-}
-*/
